@@ -5,6 +5,7 @@ public enum AjusteStatus {
 
 	private String descricao;
 
+	
 	AjusteStatus(String descricao) {
 		this.descricao = descricao;
 	}

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.Test;
 
-public class ParcelaFilterTeste{
+public class ParcelaFilterTest{
 	
 	private ParcelaFilter testeParcela;
 	

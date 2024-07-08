@@ -9,12 +9,14 @@ import net.originmobi.pdv.enumerado.cartao.CartaoTipo;
 
 import org.junit.Test;
 
-public class CartaoFilterTeste{
+public class CartaoFilterTest{
 	
 	CartaoFilter cartaoTeste;
+	CartaoSituacao cartaoSituacao;
 	
 	@BeforeEach
 	public void inicializa() {
+		
 		cartaoTeste = new CartaoFilter();
 		cartaoTeste.setTipo(CartaoTipo.CREDITO);
 		cartaoTeste.setSituacao(CartaoSituacao.APROCESSAR);
@@ -40,5 +42,6 @@ public class CartaoFilterTeste{
 		String dataRecebimentoTeste = cartaoTeste.getData_recebimento();
 		Assertions.assertEquals("14/12/2024", dataRecebimentoTeste);
 	}
+	
 	
 }
